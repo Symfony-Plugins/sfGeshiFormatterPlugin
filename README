@@ -1,0 +1,56 @@
+sfGeshiFormatter Plugin
+==============
+
+The `sfGeshiFormatter` is a symfony plugin that enables a bb code like syntax 
+for nice code outputs using geshi http://qbnz.com/highlighter
+for now, you need to have this pecl extension installed  http://de3.php.net/manual/en/book.bbcode.php
+
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfGeshiFormatter
+
+
+Usage
+-----
+
+  * [php]
+    $text = <<<EOF
+
+this is normal text
+[code=php]
+<?php
+/* A simple php script */
+ 
+$choice = $_GET['foo'];
+if ( $choice == 1 )
+{
+  echo 'You like coffee!';
+}
+elseif ( $choice == 2 )
+{
+  echo 'I said, "You like coffee!"';
+}
+ 
+echo "<br />\"Isn't coffee horrible though?\"";
+ 
+?>    
+[/code]
+
+normal text
+
+EOF;
+
+  * [php]
+<?php use_helper('Geshi') ?>
+<?php echo geshi_beautify($text)?>
+
+
+TODO
+----
+
+  * tests
+  * better geshi options support
