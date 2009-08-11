@@ -43,7 +43,7 @@ class sfGeshiFormatter {
         'code'=>      array('type'=>BBCODE_TYPE_ARG,
         'open_tag'=>'<pre class="{PARAM}">', 'close_tag'=>'</pre>',
         'default_arg'=>'{PARAM}',
-        'content_handling'=>array('sfGeshi','format')
+        'content_handling'=>array('sfGeshiFormatter','format')
         )
     );
 
