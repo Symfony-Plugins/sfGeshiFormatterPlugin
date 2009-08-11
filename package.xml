@@ -1,57 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
- <name>sfGeshiFormatterPlugin</name>
- <channel>pear.symfony-project.com</channel>
- <summary>a code formatter plugin for symfony</summary>
- <description>The `sfGeshiFormatter` is a symfony plugin that enables a bb code like syntax 
+  <name>sfGeshiFormatterPlugin</name>
+  <channel>pear.symfony-project.com</channel>
+  <summary>a code formatter plugin for symfony</summary>
+  <description>The `sfGeshiFormatter` is a symfony plugin that enables a bb code like syntax
 for nice code outputs using geshi http://qbnz.com/highlighter                 
 for now, you need to have this pecl extension installed  http://de3.php.net/manual/en/book.bbcode.php
-</description>
- <lead>
-  <name>Robert Schönthal</name>
-  <user>caziel</user>
-  <email>caziel@gmx.net</email>
-  <active>yes</active>
- </lead>
- <date>2009-08-10</date>
- <version>
-   <release>0.5.0</release>
-   <api>0.5</api>
- </version>
- <stability>
- <release>beta</release>
-  <api>beta</api>
- </stability>
-<license uri="http://www.symfony-project.com/license">MIT</license>
- <notes>-</notes>
- <contents><dir name="/"><dir name="lib"><dir name="vendor"><dir name="geshi"><dir name="contrib"><file name="aliased.php" role="data"/><file name="cssgen.php" role="data"/><file name="cssgen2.php" role="data"/><file name="example.php" role="data"/><file name="langcheck.php" role="data"/></dir><dir name="docs"><file name="BUGS" role="data"/><file name="CHANGES" role="data"/><file name="COPYING" role="data"/><file name="README" role="data"/><file name="THANKS" role="data"/><file name="TODO" role="data"/><dir name="api"><dir name="__filesource"><file name="fsource_geshi_core_geshi.php.html" role="data"/></dir><file name="blank.html" role="data"/><file name="classtrees_geshi.html" role="data"/><file name="elementindex.html" role="data"/><file name="elementindex_geshi.html" role="data"/><file name="errors.html" role="data"/><dir name="geshi"><dir name="core"><file name="GeSHi.html" role="data"/><file name="_geshi.php.html" role="data"/></dir></dir><file name="index.html" role="data"/><file name="li_geshi.html" role="data"/><dir name="media"><file name="banner.css" role="data"/><dir name="images"><file name="AbstractClass.png" role="data"/><file name="AbstractClass_logo.png" role="data"/><file name="AbstractMethod.png" role="data"/><file name="AbstractPrivateClass.png" role="data"/><file name="AbstractPrivateClass_logo.png" role="data"/><file name="AbstractPrivateMethod.png" role="data"/><file name="Class.png" role="data"/><file name="Class_logo.png" role="data"/><file name="Constant.png" role="data"/><file name="Constructor.png" role="data"/><file name="Destructor.png" role="data"/><file name="Function.png" role="data"/><file name="Global.png" role="data"/><file name="I.png" role="data"/><file name="Index.png" role="data"/><file name="Interface.png" role="data"/><file name="Interface_logo.png" role="data"/><file name="L.png" role="data"/><file name="Lminus.png" role="data"/><file name="Lplus.png" role="data"/><file name="Method.png" role="data"/><file name="Page.png" role="data"/><file name="Page_logo.png" role="data"/><file name="PrivateClass.png" role="data"/><file name="PrivateClass_logo.png" role="data"/><file name="PrivateMethod.png" role="data"/><file name="PrivateVariable.png" role="data"/><file name="StaticMethod.png" role="data"/><file name="StaticVariable.png" role="data"/><file name="T.png" role="data"/><file name="Tminus.png" role="data"/><file name="Tplus.png" role="data"/><file name="Variable.png" role="data"/><file name="blank.png" role="data"/><file name="class_folder.png" role="data"/><file name="empty.png" role="data"/><file name="file.png" role="data"/><file name="folder.png" role="data"/><file name="function_folder.png" role="data"/><file name="next_button.png" role="data"/><file name="next_button_disabled.png" role="data"/><file name="package.png" role="data"/><file name="package_folder.png" role="data"/><file name="previous_button.png" role="data"/><file name="previous_button_disabled.png" role="data"/><file name="private_class_logo.png" role="data"/><file name="tutorial.png" role="data"/><file name="tutorial_folder.png" role="data"/><file name="up_button.png" role="data"/></dir><file name="stylesheet.css" role="data"/></dir><file name="packages.html" role="data"/><file name="todolist.html" role="data"/></dir><file name="geshi-doc.html" role="data"/><file name="geshi-doc.txt" role="data"/><file name="phpdoc.ini" role="data"/></dir><dir name="geshi"><file name="abap.php" role="data"/><file name="actionscript.php" role="data"/><file name="actionscript3.php" role="data"/><file name="ada.php" role="data"/><file name="apache.php" role="data"/><file name="applescript.php" role="data"/><file name="apt_sources.php" role="data"/><file name="asm.php" role="data"/><file name="asp.php" role="data"/><file name="autoit.php" role="data"/><file name="avisynth.php" role="data"/><file name="bash.php" role="data"/><file name="basic4gl.php" role="data"/><file name="bf.php" role="data"/><file name="bibtex.php" role="data"/><file name="blitzbasic.php" role="data"/><file name="bnf.php" role="data"/><file name="boo.php" role="data"/><file name="c.php" role="data"/><file name="c_mac.php" role="data"/><file name="caddcl.php" role="data"/><file name="cadlisp.php" role="data"/><file name="cfdg.php" role="data"/><file name="cfm.php" role="data"/><file name="cil.php" role="data"/><file name="cmake.php" role="data"/><file name="cobol.php" role="data"/><file name="cpp-qt.php" role="data"/><file name="cpp.php" role="data"/><file name="csharp.php" role="data"/><file name="css.php" role="data"/><file name="d.php" role="data"/><file name="dcs.php" role="data"/><file name="delphi.php" role="data"/><file name="diff.php" role="data"/><file name="div.php" role="data"/><file name="dos.php" role="data"/><file name="dot.php" role="data"/><file name="eiffel.php" role="data"/><file name="email.php" role="data"/><file name="erlang.php" role="data"/><file name="fo.php" role="data"/><file name="fortran.php" role="data"/><file name="freebasic.php" role="data"/><file name="genero.php" role="data"/><file name="gettext.php" role="data"/><file name="glsl.php" role="data"/><file name="gml.php" role="data"/><file name="gnuplot.php" role="data"/><file name="groovy.php" role="data"/><file name="haskell.php" role="data"/><file name="hq9plus.php" role="data"/><file name="html4strict.php" role="data"/><file name="idl.php" role="data"/><file name="ini.php" role="data"/><file name="inno.php" role="data"/><file name="intercal.php" role="data"/><file name="io.php" role="data"/><file name="java.php" role="data"/><file name="java5.php" role="data"/><file name="javascript.php" role="data"/><file name="kixtart.php" role="data"/><file name="klonec.php" role="data"/><file name="klonecpp.php" role="data"/><file name="latex.php" role="data"/><file name="lisp.php" role="data"/><file name="locobasic.php" role="data"/><file name="lolcode.php" role="data"/><file name="lotusformulas.php" role="data"/><file name="lotusscript.php" role="data"/><file name="lscript.php" role="data"/><file name="lsl2.php" role="data"/><file name="lua.php" role="data"/><file name="m68k.php" role="data"/><file name="make.php" role="data"/><file name="matlab.php" role="data"/><file name="mirc.php" role="data"/><file name="modula3.php" role="data"/><file name="mpasm.php" role="data"/><file name="mxml.php" role="data"/><file name="mysql.php" role="data"/><file name="nsis.php" role="data"/><file name="oberon2.php" role="data"/><file name="objc.php" role="data"/><file name="ocaml-brief.php" role="data"/><file name="ocaml.php" role="data"/><file name="oobas.php" role="data"/><file name="oracle11.php" role="data"/><file name="oracle8.php" role="data"/><file name="pascal.php" role="data"/><file name="per.php" role="data"/><file name="perl.php" role="data"/><file name="php-brief.php" role="data"/><file name="php.php" role="data"/><file name="pic16.php" role="data"/><file name="pixelbender.php" role="data"/><file name="plsql.php" role="data"/><file name="povray.php" role="data"/><file name="powershell.php" role="data"/><file name="progress.php" role="data"/><file name="prolog.php" role="data"/><file name="properties.php" role="data"/><file name="providex.php" role="data"/><file name="python.php" role="data"/><file name="qbasic.php" role="data"/><file name="rails.php" role="data"/><file name="rebol.php" role="data"/><file name="reg.php" role="data"/><file name="robots.php" role="data"/><file name="ruby.php" role="data"/><file name="sas.php" role="data"/><file name="scala.php" role="data"/><file name="scheme.php" role="data"/><file name="scilab.php" role="data"/><file name="sdlbasic.php" role="data"/><file name="smalltalk.php" role="data"/><file name="smarty.php" role="data"/><file name="sql.php" role="data"/><file name="tcl.php" role="data"/><file name="teraterm.php" role="data"/><file name="text.php" role="data"/><file name="thinbasic.php" role="data"/><file name="tsql.php" role="data"/><file name="typoscript.php" role="data"/><file name="vb.php" role="data"/><file name="vbnet.php" role="data"/><file name="verilog.php" role="data"/><file name="vhdl.php" role="data"/><file name="vim.php" role="data"/><file name="visualfoxpro.php" role="data"/><file name="visualprolog.php" role="data"/><file name="whitespace.php" role="data"/><file name="whois.php" role="data"/><file name="winbatch.php" role="data"/><file name="xml.php" role="data"/><file name="xorg_conf.php" role="data"/><file name="xpp.php" role="data"/><file name="z80.php" role="data"/></dir><file name="geshi.php" role="data"/></dir></dir><dir name="helper"><file name="GeshiHelper.php" role="data"/></dir><file name="sfGeshiFormatter.class.php" role="data"/></dir><file name="LICENSE" role="data"/><file name="README" role="data"/></dir></contents>
+  </description>
+  <lead>
+    <name>Robert Schönthal</name>
+    <user>caziel</user>
+    <email>caziel@gmx.net</email>
+    <active>yes</active>
+  </lead>
+  <date>2009-08-11</date>
+  <version>
+    <release>0.5.1</release>
+    <api>0.5</api>
+  </version>
+  <stability>
+    <release>beta</release>
+    <api>beta</api>
+  </stability>
+  <license uri="http://www.symfony-project.com/license">MIT</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <dir name="lib">
+        <dir name="vendor">
+          <dir name="geshi">
+            <dir name="contrib">
+              <file name="aliased.php" role="data"/>
+              <file name="cssgen.php" role="data"/>
+              <file name="cssgen2.php" role="data"/>
+              <file name="example.php" role="data"/>
+              <file name="langcheck.php" role="data"/>
+            </dir>
+            <dir name="docs">
+              <file name="BUGS" role="data"/>
+              <file name="CHANGES" role="data"/>
+              <file name="COPYING" role="data"/>
+              <file name="README" role="data"/>
+              <file name="THANKS" role="data"/>
+              <file name="TODO" role="data"/>
+              <dir name="api">
+                <dir name="__filesource">
+                  <file name="fsource_geshi_core_geshi.php.html" role="data"/>
+                </dir>
+                <file name="blank.html" role="data"/>
+                <file name="classtrees_geshi.html" role="data"/>
+                <file name="elementindex.html" role="data"/>
+                <file name="elementindex_geshi.html" role="data"/>
+                <file name="errors.html" role="data"/>
+                <dir name="geshi">
+                  <dir name="core">
+                    <file name="GeSHi.html" role="data"/>
+                    <file name="_geshi.php.html" role="data"/>
+                  </dir>
+                </dir>
+                <file name="index.html" role="data"/>
+                <file name="li_geshi.html" role="data"/>
+                <dir name="media">
+                  <file name="banner.css" role="data"/>
+                  <dir name="images">
+                    <file name="AbstractClass.png" role="data"/>
+                    <file name="AbstractClass_logo.png" role="data"/>
+                    <file name="AbstractMethod.png" role="data"/>
+                    <file name="AbstractPrivateClass.png" role="data"/>
+                    <file name="AbstractPrivateClass_logo.png" role="data"/>
+                    <file name="AbstractPrivateMethod.png" role="data"/>
+                    <file name="Class.png" role="data"/>
+                    <file name="Class_logo.png" role="data"/>
+                    <file name="Constant.png" role="data"/>
+                    <file name="Constructor.png" role="data"/>
+                    <file name="Destructor.png" role="data"/>
+                    <file name="Function.png" role="data"/>
+                    <file name="Global.png" role="data"/>
+                    <file name="I.png" role="data"/>
+                    <file name="Index.png" role="data"/>
+                    <file name="Interface.png" role="data"/>
+                    <file name="Interface_logo.png" role="data"/>
+                    <file name="L.png" role="data"/>
+                    <file name="Lminus.png" role="data"/>
+                    <file name="Lplus.png" role="data"/>
+                    <file name="Method.png" role="data"/>
+                    <file name="Page.png" role="data"/>
+                    <file name="Page_logo.png" role="data"/>
+                    <file name="PrivateClass.png" role="data"/>
+                    <file name="PrivateClass_logo.png" role="data"/>
+                    <file name="PrivateMethod.png" role="data"/>
+                    <file name="PrivateVariable.png" role="data"/>
+                    <file name="StaticMethod.png" role="data"/>
+                    <file name="StaticVariable.png" role="data"/>
+                    <file name="T.png" role="data"/>
+                    <file name="Tminus.png" role="data"/>
+                    <file name="Tplus.png" role="data"/>
+                    <file name="Variable.png" role="data"/>
+                    <file name="blank.png" role="data"/>
+                    <file name="class_folder.png" role="data"/>
+                    <file name="empty.png" role="data"/>
+                    <file name="file.png" role="data"/>
+                    <file name="folder.png" role="data"/>
+                    <file name="function_folder.png" role="data"/>
+                    <file name="next_button.png" role="data"/>
+                    <file name="next_button_disabled.png" role="data"/>
+                    <file name="package.png" role="data"/>
+                    <file name="package_folder.png" role="data"/>
+                    <file name="previous_button.png" role="data"/>
+                    <file name="previous_button_disabled.png" role="data"/>
+                    <file name="private_class_logo.png" role="data"/>
+                    <file name="tutorial.png" role="data"/>
+                    <file name="tutorial_folder.png" role="data"/>
+                    <file name="up_button.png" role="data"/>
+                  </dir>
+                  <file name="stylesheet.css" role="data"/>
+                </dir>
+                <file name="packages.html" role="data"/>
+                <file name="todolist.html" role="data"/>
+              </dir>
+              <file name="geshi-doc.html" role="data"/>
+              <file name="geshi-doc.txt" role="data"/>
+              <file name="phpdoc.ini" role="data"/>
+            </dir>
+            <dir name="geshi">
+              <file name="abap.php" role="data"/>
+              <file name="actionscript.php" role="data"/>
+              <file name="actionscript3.php" role="data"/>
+              <file name="ada.php" role="data"/>
+              <file name="apache.php" role="data"/>
+              <file name="applescript.php" role="data"/>
+              <file name="apt_sources.php" role="data"/>
+              <file name="asm.php" role="data"/>
+              <file name="asp.php" role="data"/>
+              <file name="autoit.php" role="data"/>
+              <file name="avisynth.php" role="data"/>
+              <file name="bash.php" role="data"/>
+              <file name="basic4gl.php" role="data"/>
+              <file name="bf.php" role="data"/>
+              <file name="bibtex.php" role="data"/>
+              <file name="blitzbasic.php" role="data"/>
+              <file name="bnf.php" role="data"/>
+              <file name="boo.php" role="data"/>
+              <file name="c.php" role="data"/>
+              <file name="c_mac.php" role="data"/>
+              <file name="caddcl.php" role="data"/>
+              <file name="cadlisp.php" role="data"/>
+              <file name="cfdg.php" role="data"/>
+              <file name="cfm.php" role="data"/>
+              <file name="cil.php" role="data"/>
+              <file name="cmake.php" role="data"/>
+              <file name="cobol.php" role="data"/>
+              <file name="cpp-qt.php" role="data"/>
+              <file name="cpp.php" role="data"/>
+              <file name="csharp.php" role="data"/>
+              <file name="css.php" role="data"/>
+              <file name="d.php" role="data"/>
+              <file name="dcs.php" role="data"/>
+              <file name="delphi.php" role="data"/>
+              <file name="diff.php" role="data"/>
+              <file name="div.php" role="data"/>
+              <file name="dos.php" role="data"/>
+              <file name="dot.php" role="data"/>
+              <file name="eiffel.php" role="data"/>
+              <file name="email.php" role="data"/>
+              <file name="erlang.php" role="data"/>
+              <file name="fo.php" role="data"/>
+              <file name="fortran.php" role="data"/>
+              <file name="freebasic.php" role="data"/>
+              <file name="genero.php" role="data"/>
+              <file name="gettext.php" role="data"/>
+              <file name="glsl.php" role="data"/>
+              <file name="gml.php" role="data"/>
+              <file name="gnuplot.php" role="data"/>
+              <file name="groovy.php" role="data"/>
+              <file name="haskell.php" role="data"/>
+              <file name="hq9plus.php" role="data"/>
+              <file name="html4strict.php" role="data"/>
+              <file name="idl.php" role="data"/>
+              <file name="ini.php" role="data"/>
+              <file name="inno.php" role="data"/>
+              <file name="intercal.php" role="data"/>
+              <file name="io.php" role="data"/>
+              <file name="java.php" role="data"/>
+              <file name="java5.php" role="data"/>
+              <file name="javascript.php" role="data"/>
+              <file name="kixtart.php" role="data"/>
+              <file name="klonec.php" role="data"/>
+              <file name="klonecpp.php" role="data"/>
+              <file name="latex.php" role="data"/>
+              <file name="lisp.php" role="data"/>
+              <file name="locobasic.php" role="data"/>
+              <file name="lolcode.php" role="data"/>
+              <file name="lotusformulas.php" role="data"/>
+              <file name="lotusscript.php" role="data"/>
+              <file name="lscript.php" role="data"/>
+              <file name="lsl2.php" role="data"/>
+              <file name="lua.php" role="data"/>
+              <file name="m68k.php" role="data"/>
+              <file name="make.php" role="data"/>
+              <file name="matlab.php" role="data"/>
+              <file name="mirc.php" role="data"/>
+              <file name="modula3.php" role="data"/>
+              <file name="mpasm.php" role="data"/>
+              <file name="mxml.php" role="data"/>
+              <file name="mysql.php" role="data"/>
+              <file name="nsis.php" role="data"/>
+              <file name="oberon2.php" role="data"/>
+              <file name="objc.php" role="data"/>
+              <file name="ocaml-brief.php" role="data"/>
+              <file name="ocaml.php" role="data"/>
+              <file name="oobas.php" role="data"/>
+              <file name="oracle11.php" role="data"/>
+              <file name="oracle8.php" role="data"/>
+              <file name="pascal.php" role="data"/>
+              <file name="per.php" role="data"/>
+              <file name="perl.php" role="data"/>
+              <file name="php-brief.php" role="data"/>
+              <file name="php.php" role="data"/>
+              <file name="pic16.php" role="data"/>
+              <file name="pixelbender.php" role="data"/>
+              <file name="plsql.php" role="data"/>
+              <file name="povray.php" role="data"/>
+              <file name="powershell.php" role="data"/>
+              <file name="progress.php" role="data"/>
+              <file name="prolog.php" role="data"/>
+              <file name="properties.php" role="data"/>
+              <file name="providex.php" role="data"/>
+              <file name="python.php" role="data"/>
+              <file name="qbasic.php" role="data"/>
+              <file name="rails.php" role="data"/>
+              <file name="rebol.php" role="data"/>
+              <file name="reg.php" role="data"/>
+              <file name="robots.php" role="data"/>
+              <file name="ruby.php" role="data"/>
+              <file name="sas.php" role="data"/>
+              <file name="scala.php" role="data"/>
+              <file name="scheme.php" role="data"/>
+              <file name="scilab.php" role="data"/>
+              <file name="sdlbasic.php" role="data"/>
+              <file name="smalltalk.php" role="data"/>
+              <file name="smarty.php" role="data"/>
+              <file name="sql.php" role="data"/>
+              <file name="tcl.php" role="data"/>
+              <file name="teraterm.php" role="data"/>
+              <file name="text.php" role="data"/>
+              <file name="thinbasic.php" role="data"/>
+              <file name="tsql.php" role="data"/>
+              <file name="typoscript.php" role="data"/>
+              <file name="vb.php" role="data"/>
+              <file name="vbnet.php" role="data"/>
+              <file name="verilog.php" role="data"/>
+              <file name="vhdl.php" role="data"/>
+              <file name="vim.php" role="data"/>
+              <file name="visualfoxpro.php" role="data"/>
+              <file name="visualprolog.php" role="data"/>
+              <file name="whitespace.php" role="data"/>
+              <file name="whois.php" role="data"/>
+              <file name="winbatch.php" role="data"/>
+              <file name="xml.php" role="data"/>
+              <file name="xorg_conf.php" role="data"/>
+              <file name="xpp.php" role="data"/>
+              <file name="z80.php" role="data"/>
+            </dir>
+            <file name="geshi.php" role="data"/>
+          </dir>
+        </dir>
+        <dir name="helper">
+          <file name="GeshiHelper.php" role="data"/>
+        </dir>
+        <file name="sfGeshiFormatter.class.php" role="data"/>
+      </dir>
+      <file name="LICENSE" role="data"/>
+      <file name="README" role="data"/>
+    </dir>
+  </contents>
 
- <dependencies>
-  <required>
-   <php>
-    <min>5.1.0</min>
-   </php>
-   <pearinstaller>
-    <min>1.4.1</min>
-   </pearinstaller>
-   <package>
-    <name>symfony</name>
-    <channel>pear.symfony-project.com</channel>
-    <min>1.1.0</min>
-    <max>1.3.0</max>
-    <exclude>1.3.0</exclude>
-   </package>
-  </required>
- </dependencies>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.1.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.1.0</min>
+        <max>1.3.0</max>
+        <exclude>1.3.0</exclude>
+      </package>
+    </required>
+  </dependencies>
 
- <phprelease>
- </phprelease>
+  <phprelease>
+  </phprelease>
 
- <changelog>
- <release>
-<version>
-<release>0.5.0</release>
-<api>0.5</api>
-</version>
-<stability><release>=beta</release><api>=beta</api></stability><license uri="http://www.symfony-project.com/license">MIT</license><date>2009-08-10</date><notes>=initial Release</notes></release></changelog>
+  <changelog>
+    <release>
+      <version>
+        <release>0.5.1</release>
+        <api>0.5</api>
+      </version>
+      <stability>
+        <release>=beta</release>
+        <api>=beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT</license>
+      <date>2009-08-11</date>
+      <notes>=fixed formatter callback</notes>
+    </release>
+    <release>
+      <version>
+        <release>0.5.0</release>
+        <api>0.5</api>
+      </version>
+      <stability>
+        <release>=beta</release>
+        <api>=beta</api>
+      </stability>
+      <license uri="http://www.symfony-project.com/license">MIT</license>
+      <date>2009-08-10</date>
+      <notes>=initial Release</notes>
+    </release>
+  </changelog>
 </package>

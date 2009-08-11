@@ -1,7 +1,7 @@
 sfGeshiFormatter Plugin
 ==============
 
-The `sfGeshiFormatter` is a symfony plugin that enables a bb code like syntax 
+The `sfGeshiFormatter` is a symfony plugin that enables a bb code like syntax
 for nice code outputs using geshi http://qbnz.com/highlighter
 for now, you need to have this pecl extension installed  http://de3.php.net/manual/en/book.bbcode.php
 
@@ -11,42 +11,64 @@ Installation
 
   * Install the plugin
 
-        $ symfony plugin:install sfGeshiFormatter
+        $ symfony plugin:install sfGeshiFormatterPlugin -s beta
 
+  * Install the PECL Extension
+
+a good installation guide can be found here:
+
+http://de3.php.net/manual/en/book.bbcode.php
 
 Usage
 -----
 
-  * [php]
-    $text = <<<EOF
+  *
+simply wrap your code blocks blocks with [code=lang]//your code...[/code]
 
-this is normal text
-[code=php]
-<?php
-/* A simple php script */
- 
-$choice = $_GET['foo'];
-if ( $choice == 1 )
-{
-  echo 'You like coffee!';
-}
-elseif ( $choice == 2 )
-{
-  echo 'I said, "You like coffee!"';
-}
- 
-echo "<br />\"Isn't coffee horrible though?\"";
- 
-?>    
-[/code]
+for supported languages look at the geshi project homepage at http://qbnz.com/highlighter/
 
-normal text
+  *
+to beautify your text use the "Geshi" Helper and put your text into this function : geshi_beautify()
 
-EOF;
+      $text =  <<<EOF
 
-  * [php]
-<?php use_helper('Geshi') ?>
-<?php echo geshi_beautify($text)?>
+      this is normal text
+
+      [code=php]
+
+      /* A simple php script */
+
+      $choice = $_GET['foo'];
+
+      if ( $choice == 1 )
+
+      {
+
+        echo 'You like coffee!';
+
+      }
+
+      elseif ( $choice == 2 )
+
+      {
+
+        echo 'I said, "You like coffee!"';
+
+      }
+
+      echo "\"Isn't coffee horrible though?\"";
+
+      [/code]
+
+      normal text
+
+      EOF;
+
+  *
+
+      use_helper('Geshi');
+
+      echo geshi_beautify($text);
 
 
 TODO
@@ -54,3 +76,5 @@ TODO
 
   * tests
   * better geshi options support
+  * other bbcode library (pear) support
+  * other beautifier library support
